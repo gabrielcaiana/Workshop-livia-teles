@@ -214,5 +214,123 @@ nav ul a li:hover {
 
 /*Como funciona*/
 .como-funciona {
-    margin-top: 200px;
+    width: 100%;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #262627;
+    margin-bottom: 50px;
+}
+
+.como-funciona .container {
+    flex-direction: row;
+}
+
+.como-funciona .container div {
+    width: 50%;
+}
+
+.como-funciona h2 {
+    font-size: 42px;
+    margin-bottom: 32px;
+}
+
+.como-funciona p {
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 750px;
+    margin-bottom: 16px;
+}
+
+.como-funciona  a {
+    text-decoration: none;
+    color: #3C5AFD;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cadastrar-se {
+    margin-top: 32px;
+}
+
+.como-funciona .arrow {
+    margin-left: 22px;
+}
+
+.como-funciona .ilustracao-aula {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*O que você vai aprender*/
+.oque-voce-vai-aprender {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.oque-voce-vai-aprender .container {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.oque-voce-vai-aprender h3 {
+    margin: 32px 0 ;
+    font-size: 42px;
+}
+
+.oque-voce-vai-aprender .cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px 20px;
+}
+
+.oque-voce-vai-aprender .cursos {
+    margin: 48px 0;
+    width: 100%;
+}
+
+.oque-voce-vai-aprender .cursos div {
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    max-height: 600px;
+    box-shadow: 1px 1px 15px 2px #00000029;
+    border-radius: 10px;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    background-color: #1F1B24 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    color: white;
+}
+
+footer .container {
+    justify-content: center;
+    align-items: center;
+}
+
+footer h5 {
+    font-size: 18px;
+    margin-bottom: 42px;
+}
+
+footer span {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #BFC4CE;
 }
