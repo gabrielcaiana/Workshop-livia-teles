@@ -296,9 +296,9 @@ nav ul a li:hover {
 
 .oque-voce-vai-aprender .cursos div {
     background-color: white;
-    width: 400px;
-    height: 600px;
-    max-height: 600px;
+    width: 100%;
+    height: 500px;
+    max-height: 450px;
     box-shadow: 1px 1px 15px 2px #00000029;
     border-radius: 10px;
 }
@@ -317,6 +317,7 @@ footer {
 footer .container {
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 footer h5 {
