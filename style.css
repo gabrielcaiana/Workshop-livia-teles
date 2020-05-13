@@ -303,6 +303,52 @@ nav ul a li:hover {
     border-radius: 10px;
 }
 
+.sobre-a-livia {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 48px;
+}
+
+.sobre-a-livia .container {
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.sobre-a-livia .container div {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.sobre-a-livia .container div p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 16px;
+}
+
+.sobre-a-livia .foto-livia {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.sobre-a-livia div ul {
+    display: flex;
+    list-style: none;
+}
+
+.sobre-a-livia div ul li {
+    margin-right: 12px;
+    margin-top: 16px;
+}
+
+.sobre-a-livia h4 {
+    margin: 32px 0 ;
+    font-size: 42px;
+}
+
 /*Footer*/
 footer {
     width: 100%;
