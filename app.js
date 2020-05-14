@@ -21,17 +21,11 @@ function openAnimation(param) {
 function close(param) {
     param.addEventListener('click', () => {
         // closeAnimation(menuMobile)
+        if(window.innerWidth < 900)
         setTimeout(() => {
             menuMobile.style.display = 'none'
         }, 200) 
     })
-}
-
-function closeAnimation(param) {
-    param.animate([
-        { transform: 'translateX(0)' },
-        { transform: 'translateX(300px)' }
-    ], { duration: 200 }, { iterations: 1 })
 }
 
 open(openMenu)

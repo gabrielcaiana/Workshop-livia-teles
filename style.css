@@ -327,7 +327,6 @@ nav ul li a:hover {
 .instrutor {
     width: 90%;
     height: 150px;
-    color: red;
     background-color: #A7A7AE;
     border-radius: 10px;
     padding: 16px;
@@ -504,8 +503,10 @@ footer p {
     width: 50%;
     max-width: 600px;
     height: auto;
+    max-height: 90vh;
     margin: 5vh auto;
     position: relative;
+    overflow: scroll;
 }
 
 .modal .close-modal {
@@ -671,7 +672,6 @@ form button {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: red;
     }
 
     .sobre-a-livia .container div {
@@ -721,6 +721,7 @@ form button {
     max-height: 90vh;
     margin: 5vh auto;
     position: relative;
+    overflow: scroll;
     }
 
     .modal-content span {
