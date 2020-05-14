@@ -27,7 +27,7 @@
             <div>
                 <span>Projeto para ajudar a Lívia</span>
                 <h1><b>Doe R$ ou + para Lívia Teles</b> e garanta sua vaga para o workshop online sobre desenvolvimento web.</h1>
-                     <a href="#">
+                     <a href="#" class="register">
                         Garanta sua vaga
                         <img src="images/arrow.png" alt="arrow" title="arrow">
                     </a>
@@ -79,7 +79,7 @@
                 de intermediário e avançado.</p>
             <p>Lembrando que a inscrição no curso é o comprovante de depósito
                 na conta da <b>Lívia Teles.</b></p>
-            <a class="cadastrar-se" href="#">Faça sua inscrição agora mesmo <img class="arrow" src="images/arrow-roxo.png" alt="Arrow"></a>
+            <a class="cadastrar-se register" href="#">Faça sua inscrição agora mesmo <img class="arrow" src="images/arrow-roxo.png" alt="Arrow"></a>
         </div>
         <div class="ilustracao-aula"><img src="images/ilustracao.png" alt="c" title="Tamanho/Peso"></div>
     </div>
@@ -105,7 +105,7 @@
                     <li>Criando o primeiro App</li>
                     <li>Conceitos avançados</li>
                 </ul>
-                <a style="height: 50px;" class="btn-curso ios" href="#">Cadastre-se</a>
+                <a style="height: 50px;" class="btn-curso ios register" href="#">Cadastre-se</a>
             </div>
             <div class="curso">
                 <div class="instrutor android">
@@ -123,7 +123,7 @@
                     <li>Criando o primeiro App</li>
                     <li>Conceitos avançados</li>
                 </ul>
-                <a class="btn-curso android" href="#">Cadastre-se</a>
+                <a  class="btn-curso android register" href="#">Cadastre-se</a>
             </div>
             <div class="curso">
                 <div class="instrutor reactnative">
@@ -141,7 +141,7 @@
                     <li>Criando o primeiro App</li>
                     <li>Conceitos avançados</li>
                 </ul>
-                <a class="btn-curso reactnative" href="#">Cadastre-se</a>
+                <a class="btn-curso reactnative register" href="#">Cadastre-se</a>
             </div>
             <div class="curso">
                 <div class="instrutor flutter">
@@ -159,7 +159,7 @@
                     <li>Criando o primeiro App</li>
                     <li>Conceitos avançados</li>
                 </ul>
-                <a class="btn-curso flutter" href="#">Cadastre-se</a>
+                <a class="btn-curso flutter register" href="#">Cadastre-se</a>
             </div>
             <div class="curso">
                 <div class="instrutor nativescript">
@@ -177,7 +177,7 @@
                     <li>Criando o primeiro App</li>
                     <li>Conceitos avançados</li>
                 </ul>
-                <a class="btn-curso nativescript" href="#">Cadastre-se</a>
+                <a  class="btn-curso nativescript register" href="#">Cadastre-se</a>
             </div>
         </div>
     </div>
@@ -206,6 +206,31 @@
         <p>A inscrição do curso é o comprovante de depósito na conta da Livía Teles.</p>
     </div>
 </footer>
+
+<div class="modal-overlay">
+    <div class="modal">
+        <a class="close-modal">
+            <img class="closeIconModal" src="images/close-black.png" alt="icon-close">
+        </a>
+
+        <div class="modal-content">
+            <div class="container">
+                <span>Informe seu nome e mail e faça o upload do comprovante para se cadastrar.</span>
+                <form method="POST" action="index.html">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required placeholder="Digite seu nome">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+
+                    <label for="document">Comprovante</label>
+                    <input class="arquivo" type="file" id="document" required name="document" placeholder="Faça upload do comprovante de pagamento">
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
     
 <script src="app.js"></script>
 </body>

@@ -38,6 +38,10 @@ header {
     display: none;
 }
 
+.close {
+    display: none;
+}
+
 nav {
     width: 100%;
     display: flex;
@@ -65,6 +69,7 @@ nav ul li a {
     color: white;
     font-size: 16px;
     cursor: pointer;
+    display: block;
 }
 
 nav ul li a {
@@ -482,6 +487,97 @@ footer p {
     color: #BFC4CE;
 }
 
+/* ==== Modal*/
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: #fff;
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    cursor: pointer;
+}
+
+.closeIconModal {
+    width: 18px;
+}
+
+.modal-content .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 80px 24px 32px  24px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.modal-content span {
+    color: #3C5AFD;
+    font-size: 28px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 90%;
+    margin-top: 32px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    margin-bottom: 16px;
+    height: 42px;
+    border-radius: 5px;
+    padding: 4px 16px;
+    border: 1px solid #DDDFE7;
+}
+
+form .arquivo {
+    border: none;
+    padding: 4px 0;
+}
+
+form button {
+    background-color: #A4C639;
+    border-radius: 5px;
+    width: 190px;
+    height: 50px;
+    color: white;
+    border : none;
+    align-self: center;
+}
+
+
+/*Modal Active */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
 /* Breakpoint 900px*/
 
 @media (max-width: 900px) {
@@ -612,6 +708,35 @@ footer p {
    footer p {
        text-align: center;
    }
+
+   form {
+    margin-top: 10px;
+   }
+
+   .modal {
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    max-height: 90vh;
+    margin: 5vh auto;
+    position: relative;
+    }
+
+    .modal-content span {
+        color: #3C5AFD;
+        font-size: 16px;
+        margin-top: 28px;
+    }
+
+    form label {
+        font-size: 14px;
+    }
+
+    .modal-content .container {
+        padding: 29px 24px 32px  24px;
+
+    }
 }
 
 @media (max-width: 375px) {

@@ -79,3 +79,16 @@ comoFunciona.addEventListener('click', function() {
 aprender.addEventListener('click', function() {
     smoothScroll('.oque-voce-vai-aprender', 1000)
 })
+
+const modalOverlay = document.querySelector('.modal-overlay')
+const openModal = document.querySelectorAll('.register')
+
+for (let openM of openModal) {
+    openM.addEventListener("click", function(){
+        modalOverlay.classList.add('active')
+    })
+}
+
+document.querySelector('.close-modal').addEventListener('click', function() {
+    modalOverlay.classList.remove('active')
+})
