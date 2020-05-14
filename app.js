@@ -1,3 +1,43 @@
+const openMenu = document.querySelector(".menu-mobile")
+const closeMenu = document.querySelector(".mobile")
+const menuMobile = document.querySelector('.mobile')
+
+function open(param) {
+    param.addEventListener('click', () => {
+        setTimeout(() => {
+            menuMobile.style.display = 'block'
+        }, 200)
+        openAnimation(menuMobile)
+    })
+}
+
+function openAnimation(param) {
+    param.animate([
+        { transform: 'translateX(300px)' },
+        { transform: 'translateX(0)' }
+    ], { duration: 300 }, { iterations: 1 })
+}
+
+function close(param) {
+    param.addEventListener('click', () => {
+        // closeAnimation(menuMobile)
+        setTimeout(() => {
+            menuMobile.style.display = 'none'
+        }, 200) 
+    })
+}
+
+function closeAnimation(param) {
+    param.animate([
+        { transform: 'translateX(0)' },
+        { transform: 'translateX(300px)' }
+    ], { duration: 200 }, { iterations: 1 })
+}
+
+open(openMenu)
+close(closeMenu)
+
+
 function smoothScroll(target, duration) {
     var target = document.querySelector(target)
     var targetPosition = target.getBoundingClientRect().top

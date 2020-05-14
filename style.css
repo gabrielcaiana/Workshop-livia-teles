@@ -488,9 +488,36 @@ footer p {
     nav ul {
         display: none;
     }
+    .mobile {
+        background: #1F1B24;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        padding: 42px 0;
+        display: none;
+        top: 0;
+        left: 0;
+    }
+
+    .mobile li {
+        padding: 24px 0;
+        font-weight: bold;
+        border-bottom: 1px solid rgb(235, 235, 235, 0.1);
+        width: 90%;
+        margin: 0 auto;
+        
+    }
 
     .menu-mobile {
         display: block;
+    }
+
+    .close {
+        position: absolute;
+        right: 18px;
+        top: 18px;
+        display: block;
+        width: 28px;
     }
 
     .datas {
