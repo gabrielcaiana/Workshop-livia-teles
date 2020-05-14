@@ -34,6 +34,10 @@ header {
     position: relative;
 }
 
+.menu-mobile {
+    display: none;
+}
+
 nav {
     width: 100%;
     display: flex;
@@ -54,15 +58,16 @@ nav ul {
     list-style: none;
 }
 
-nav ul li {
+nav ul li a {
     margin-left: 32px;
     transition: .3s;
     text-decoration: none;
     color: white;
     font-size: 16px;
+    cursor: pointer;
 }
 
-nav ul a {
+nav ul li a {
     text-decoration: none;
 }
 
@@ -71,7 +76,7 @@ nav .active {
     text-decoration: underline white;
 }
 
-nav ul a li:hover {
+nav ul li a:hover {
     color: #3C5AFD ;
     text-decoration: underline #3C5AFD;
 }
@@ -97,7 +102,7 @@ nav ul a li:hover {
 }
 
 .wrapper div h1 {
-    margin: 16px 0;
+    margin: 32px 0;
     color: white;
     font-weight: 300;
     font-size: 48px;
@@ -108,24 +113,28 @@ nav ul a li:hover {
     margin: 32px 0;
 }
 
-.wrapper button {
+.wrapper a {
     width: 220px;
-    height: 50px;
+    padding: 16px 16px;
     background-color: #3C5AFD;
     border: none;  
-    color: white;
     border-radius: 5px;
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
-    transition: 3.s;
+    transition: .3s;
 }
 
-.wrapper button:hover {
+.wrapper  a {
+    text-decoration: none;
+    color: white;
+}
+
+.wrapper a:hover {
     background-color: rgb(15, 50, 245);
 }
 
-.wrapper button img {
+.wrapper a img {
     margin-left: 22px;
 }
 
@@ -137,7 +146,7 @@ nav ul a li:hover {
     justify-content: center;
     align-items: center;
     padding: 5px 0;
-    margin-top: -100px;
+    margin-top: -80px;
     position: absolute;
 }
 
@@ -154,7 +163,6 @@ nav ul a li:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
     padding:  0 32px;
 }
 
@@ -264,6 +272,10 @@ nav ul a li:hover {
     align-items: center;
 }
 
+.como-funciona .ilustracao-aula img {
+    width: 100%;
+}
+
 /*O que você vai aprender*/
 .oque-voce-vai-aprender {
     width: 100%;
@@ -297,13 +309,14 @@ nav ul a li:hover {
 .oque-voce-vai-aprender .cursos .curso {
     background-color: white;
     height: 500px;
-    max-height: 450px;
+    max-height: 500px;
     box-shadow: 1px 1px 15px 2px #00000029;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     padding: 16px 0;
     align-items: center;
+    max-width: 375px;
 }
 
 .instrutor {
@@ -380,7 +393,7 @@ nav ul a li:hover {
 .btn-curso {
     color: white;
     width: 80%;
-    height: 50px;
+    height: 50px !important;
     border-radius: 10px;
     text-decoration: none;
     display: flex;
@@ -415,8 +428,9 @@ nav ul a li:hover {
     margin-bottom: 16px;
 }
 
-.sobre-a-livia .foto-livia {
+.sobre-a-livia .foto-livia img {
     width: 100%;
+    max-width: 500px;
     border-radius: 4px;
 }
 
@@ -466,4 +480,78 @@ footer p {
     font-size: 14px;
     line-height: 24px;
     color: #BFC4CE;
+}
+
+/* Breakpoint 900px*/
+
+@media (max-width: 900px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .datas {
+        margin: 48px 0;
+        position: initial;
+        height: auto;
+    }
+
+    .datas .conteudo {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .datas .conteudo div {
+        margin: 0 16px 16px 0;
+        width: 150px;
+    }
+
+    .como-funciona {
+        margin-top: 70px;
+    }
+
+    .como-funciona .container {
+        flex-direction: column;
+    }
+
+    .como-funciona .container div {
+        width: 100%;
+    }
+
+    .ilustracao-aula img {
+        margin-top: 42px;
+    }
+
+    .oque-voce-vai-aprender {
+        margin-top: 70px;
+    }
+
+    .cursos {
+         display: grid;
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .sobre-a-livia .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sobre-a-livia .container .foto-livia {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-a-livia .container div {
+        width: 90%;
+        margin-top: 32px;
+    }
 }
