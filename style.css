@@ -510,6 +510,7 @@ footer p {
     .datas .conteudo div {
         margin: 0 16px 16px 0;
         width: 150px;
+        padding: 16px;
     }
 
     .como-funciona {
@@ -539,19 +540,45 @@ footer p {
 
     .sobre-a-livia .container {
         flex-direction: column;
-        align-items: center;
         justify-content: center;
     }
 
     .sobre-a-livia .container .foto-livia {
-        width: 100%;
+        width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: red;
     }
 
     .sobre-a-livia .container div {
         width: 90%;
         margin-top: 32px;
     }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        height: auto;
+    }
+    .wrapper div h1 {
+        font-size: 32px;
+    }
+
+    .cursos {
+        display: grid;
+       grid-template-columns: 1fr  !important;
+   }
+
+   .curso {
+       width: 100%;
+       align-self: center;
+       justify-self: center;
+       
+   }
+   h2, h3, h4 {
+       font-size: 24px !important;
+   }
+
 }
