@@ -86,6 +86,7 @@ nav ul li a:hover {
     text-decoration: underline #3C5AFD;
 }
 
+
 .wrapper {
     height: 100%;
     margin: 16px 0;
@@ -97,7 +98,7 @@ nav ul li a:hover {
 }
 
 .wrapper div {
-    margin-top: 70px;
+    margin: 40px 0 60px 0;
     max-width: 700px;
 }
 
@@ -114,11 +115,11 @@ nav ul li a:hover {
     line-height: 58px;
 }
 
-.wrapper div a {
+.wrapper div .cadastrar-se {
     margin: 32px 0;
 }
 
-.wrapper a {
+.wrapper .cadastrar-se {
     width: 220px;
     padding: 16px 16px;
     background-color: #3C5AFD;
@@ -130,18 +131,35 @@ nav ul li a:hover {
     transition: .3s;
 }
 
-.wrapper  a {
+.wrapper  .cadastrar-se {
     text-decoration: none;
     color: white;
 }
 
-.wrapper a:hover {
+.wrapper .cadastrar-se:hover {
     background-color: rgb(15, 50, 245);
 }
 
-.wrapper a img {
+.wrapper .cadastrar-se img {
     margin-left: 22px;
 }
+
+.doacao {
+    margin-left: 12px;
+    width: 220px;
+    padding: 16px 16px;
+    background-color: #A4C639;
+    border: none;  
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+    text-decoration: none;
+}
+
+
 
 /*Datas*/
 .datas {
@@ -687,6 +705,22 @@ form button {
     }
     .wrapper div h1 {
         font-size: 32px;
+    }
+
+    .cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .cta a {
+        margin: 0;
+        width: 80% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .cursos {
