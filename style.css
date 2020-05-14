@@ -294,14 +294,100 @@ nav ul a li:hover {
     width: 100%;
 }
 
-.oque-voce-vai-aprender .cursos div {
+.oque-voce-vai-aprender .cursos .curso {
     background-color: white;
-    width: 100%;
     height: 500px;
     max-height: 450px;
     box-shadow: 1px 1px 15px 2px #00000029;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    align-items: center;
 }
+
+.instrutor {
+    width: 90%;
+    height: 150px;
+    color: red;
+    background-color: #A7A7AE;
+    border-radius: 10px;
+    padding: 16px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.instrutor p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.imagem-instrutor {
+    width: 80px;
+    height: 80px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 12px;
+    margin-right: 12px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instrutor .imagem-instrutor img {
+    width: 36px;
+}
+
+.detalhes-instrutor {
+    display: flex;
+    align-items: center;
+}
+
+.ios {
+    background-color: #A7A7AE;
+}
+
+.android {
+    background-color: #A4C639;
+}
+
+.reactnative {
+    background-color: #61DAFB;
+}
+
+.flutter {
+    background-color: #02579B;
+}
+
+.nativescript {
+    background-color: #3C5AFD;
+}
+
+.curso ul {
+    color:  #3B3B3B;
+    list-style: none;
+    margin: 32px 0 60px 0;
+    width: 80%;
+}
+
+.curso ul li {
+    padding: 16px 0 ;
+    border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.btn-curso {
+    color: white;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .sobre-a-livia {
     width: 100%;
