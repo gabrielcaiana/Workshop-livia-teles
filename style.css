@@ -561,6 +561,7 @@ footer p {
 
     header {
         height: auto;
+        background-attachment: initial;
     }
     .wrapper div h1 {
         font-size: 32px;
